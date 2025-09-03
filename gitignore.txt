@@ -1,0 +1,29 @@
+# Python internals
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv*/
+venv*/
+env*/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# DREADDFUL-specific
+calib_out/
+images/
+metadata/
+out_cellpose/
+
+# System files
+.DS_Store
+
+# In/output files
+*.xlsx
+*.csv
+*.png
+*.tif
+*.jpg
