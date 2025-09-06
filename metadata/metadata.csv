@@ -1,4 +1,0 @@
-﻿animal,group,slice_path,mask_path
-rat6.3,Gq,images/DCPP_6.3_10x_mCherry_2-24-22_s1.jpg,images/DCPP_6.3_10x_mCherry_2-24-22_s1_mask.tif
-rat12.10,mC,images/DCPP_12.10.1_10x_mCherry_7.21.22.jpg,images/DCPP_12.10.1_10x_mCherry_7.21.22_mask.tif
-rat14.4,Gi,images/DCPP_14.4.2_10x_mCherry_10.24.22.jpg,images/DCPP_14.4.2_10x_mCherry_10.24.22_mask.tif

@@ -1,4 +1,0 @@
-animal,group,slice,n_cells,coverage,dispersion,cellprob_threshold,flow_threshold,diameter,min_size,max_size_fraction,niter,tile_overlap
-rat6.3,Gq,DCPP_6.3_10x_mCherry_2-24-22_s1.jpg,144,0.24472425164212036,1.0184616455439495,-6,0.0,0,20,0.1,auto,0.0
-rat12.10,mC,DCPP_12.10.1_10x_mCherry_7.21.22.jpg,66,0.15056048120928311,0.9397242622819288,-6,0.0,0,20,0.1,auto,0.0
-rat14.4,Gi,DCPP_14.4.2_10x_mCherry_10.24.22.jpg,123,0.14685882142915105,0.8445372692986781,-6,0.0,0,20,0.1,auto,0.0
