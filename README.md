@@ -7,8 +7,6 @@ DREADDFUL is **not** a new segmentation method. It’s a few small, well-documen
 2) run counting + simple spatial metrics within DRN ROI masks, and  
 3) test group differences under cell-count inclusion thresholds.
 
-This repository exists for **methodological transparency** for our manuscript’s (*Behavioral impact of chemogenetic manipulations of 5-HT DRN neurons in transgenic Tph2-iCre rats*) reviewer responses and for anyone wishing to reproduce or adapt our analysis.
-
 > **Ubiety** = “state of being in a particular place” — we use it whimsically to emphasize spatial aspects (coverage / dispersion) of expression inside the DRN mask.
 
 ---
@@ -209,4 +207,4 @@ DREADDFUL wraps **Cellpose** and **Fiji**; all credit for segmentation belongs t
 
 ## Disclaimer
 
-Built for the DRN chemogenetics project "Behavioral impact of chemogenetic manipulations of 5-HT DRN neurons in transgenic Tph2-iCre rats" by Nicholas S. McCloskey, Chen Li, & Lynn G. Kirby (in review). This is research code provided “as is.” It reflects the exact steps used for the study’s analyses and may need adaptation for other datasets.
+Built for the manuscript - currently **in review** - titled *Behavioral impact of chemogenetic manipulations of 5-HT DRN neurons in transgenic Tph2-iCre rats* by Nicholas S. McCloskey, Chen Li, & Lynn G. Kirby. This research code, provided “as is," reflects the exact steps used for the study’s analyses and may need adaptation for other datasets.
