@@ -170,8 +170,10 @@ def omnibus_and_posthoc(df: pd.DataFrame, group_col: str, value_col: str) -> Tup
       omnibus: dict with test, statistic, df, p, effect
       pairwise_df: rows of pairwise comparisons with p-raw, p-holm, effect size
     """
-    groups = [g[1][value_col].dropna().values for g in df.groupby(group_col)]
-    labels = [str(g) for g in df[group_col].unique()]
+    gb = list(df.groupby(group_col, sort=True)) 
+    labels = [str(name) for name, _ in gb]
+    groups = [sub[value_col].dropna().values for _, sub in gb]
+
     N = sum(len(a) for a in groups)
     k = len(groups)
 
@@ -302,8 +304,9 @@ def run_analysis(csv: Path,
             # Figure
             plt.figure()
             # Single chart per metric
-            data_to_plot = [g[1][m].dropna().values for g in sub.groupby(group_col)]
-            labels = [str(g) for g in sub[group_col].unique()]
+            gb = list(sub.groupby(group_col, sort=True))
+            data_to_plot = [subg[m].dropna().values for _, subg in gb]
+            labels = [str(name) for name, _ in gb]
             plt.boxplot(data_to_plot, labels=labels, showmeans=True)
             plt.title(f"{m} by {group_col} (T≥{T})")
             plt.ylabel(m)

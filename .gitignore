@@ -17,6 +17,7 @@ calib_out/
 images/
 metadata/
 out_cellpose/
+stats_out/
 
 # System files
 .DS_Store
